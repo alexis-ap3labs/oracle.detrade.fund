@@ -11,7 +11,6 @@ Live implementation can be found at [oracle.detrade.fund](https://oracle.detrade
 Copy `.env.example` to `.env` and configure your environment variables:
 - RPC endpoints (Ethereum, Base)
 - MongoDB connection
-- API keys (optional)
 
 ### Addresses
 - Production: `0xc6835323372A4393B90bCc227c58e82D45CE4b7d`
@@ -285,26 +284,3 @@ Each position includes:
 - Any fallback mechanisms used
 
 The system maintains detailed conversion tracking for audit purposes and includes comprehensive logging in the code for debugging and monitoring.
-
-## Environment Configuration
-
-Example `.env` configuration:
-
-```bash
-# Network RPC endpoints
-ETHEREUM_RPC="https://eth-mainnet.g.alchemy.com/v2/your-api-key"
-BASE_RPC="https://base-mainnet.g.alchemy.com/v2/your-api-key"
-
-# MongoDB configuration
-MONGO_URI="mongodb://username:password@host:port/database"
-MONGO_DB_NAME="detrade_core_usdc"
-
-# Portfolio tracking addresses
-DEFAULT_USER_ADDRESS="0xc6835323372A4393B90bCc227c58e82D45CE4b7d"  # Production Safe address
-TESTING_USER_ADDRESS="0xAbD81C60a18A34567151eA70374eA9c839a41cF5"  # Development Safe address
-
-# API Keys (optional)
-PENDLE_API_KEY=""
-COWSWAP_API_KEY=""
-
-```
