@@ -262,7 +262,7 @@ The system stores portfolio data in MongoDB with the following structure:
 
 Key sections:
 - `nav`: Overall portfolio metrics including share price
-- `overview`: Quick summary of total values and major positions
+- `overview`: Quick summary of total values positions
 - `protocols`: Detailed breakdown of protocol-specific positions
 - `spot`: Direct token holdings across networks
 
