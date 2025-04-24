@@ -6,6 +6,17 @@ Developed by [AP3Labs](https://ap3labs.com) for [DeTrade](https://detrade.fund).
 
 Live implementation can be found at [oracle.detrade.fund](https://oracle.detrade.fund).
 
+## Configuration
+
+Copy `.env.example` to `.env` and configure your environment variables:
+- RPC endpoints (Ethereum, Base)
+- MongoDB connection
+- API keys (optional)
+
+### Addresses
+- Production: `0xc6835323372A4393B90bCc227c58e82D45CE4b7d`
+- Testing: `0xAbD81C60a18A34567151eA70374eA9c839a41cF5`
+
 ## Overview
 
 DeTrade Core USDC is a comprehensive portfolio tracking system that:
@@ -289,10 +300,11 @@ MONGO_URI="mongodb://username:password@host:port/database"
 MONGO_DB_NAME="detrade_core_usdc"
 
 # Portfolio tracking addresses
-DEFAULT_USER_ADDRESS="0x..."  # Production Safe address
-TESTING_USER_ADDRESS="0x..."  # Development Safe address
+DEFAULT_USER_ADDRESS="0xc6835323372A4393B90bCc227c58e82D45CE4b7d"  # Production Safe address
+TESTING_USER_ADDRESS="0xAbD81C60a18A34567151eA70374eA9c839a41cF5"  # Development Safe address
 
-# API keys
-PENDLE_API_KEY="your-api-key"  # Optional
-COWSWAP_API_KEY="your-api-key"  # Optional
+# API Keys (optional)
+PENDLE_API_KEY=""
+COWSWAP_API_KEY=""
+
 ```

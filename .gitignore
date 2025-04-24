@@ -1,10 +1,10 @@
-# Environnement et secrets
+# Secrets et environnement
 .env
 *.env
 .env.*
 !.env.example
-.venv
 venv/
+.venv/
 ENV/
 
 # Python
@@ -29,15 +29,17 @@ wheels/
 .installed.cfg
 *.egg
 
-# IDEs et éditeurs
+# IDEs
 .idea/
 .vscode/
 *.swp
 *.swo
 *~
+
+# Système
 .DS_Store
 
-# Logs et données
+# Logs
 *.log
 logs/
 *.db
